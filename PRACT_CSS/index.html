@@ -57,19 +57,19 @@
         <div class="header-bottom">   <!-- Нижнее меню шапки -->
             <div class="container">
                 <nav class="bottom-nav">
-                    <a href="#">О магазине</a>
-                    <a href="#">Доставка и оплата </a>
-                    <a href="#">Тест-драйв</a>
-                    <a href="#">Блог</a>
-                    <a href="#">Контакты</a>
-                    <a href="#">Акции <span class="badge badge-round">%</span></a>
+                    <a href="#hero">О магазине</a>
+                    <a href="#dost">Доставка и оплата </a>
+                    <a href="#test">Тест-драйв</a>
+                    <a href="#vlog">Блог</a>
+                    <a href="#contacts">Контакты</a>
+                    <a href="#act">Акции <span class="badge badge-round">%</span></a>
                 </nav>
             </div>
         </div>
     </header>
 
     <main class="main-content">
-        <section class="hero-section">   <!-- Секция главного баннера (hero) -->
+        <section class="hero-section" id="hero">   <!-- Секция главного баннера (hero) -->
             <div class="container">
                 <div class="hero-banner">
                     <div class="hero-text-block">
@@ -220,7 +220,7 @@
         <button class="btn-outline-main">Смотреть все</button>
     </div>
 </section>
-<section class="promo-banners container">   <!-- Баннеры "Подбор модели" и "Сервисное обслуживание" -->
+<section class="promo-banners container" id ="test">   <!-- Баннеры "Подбор модели" и "Сервисное обслуживание" -->
     <div class="banner-card banner-light banner-half">
         <div class="banner-content">
             <h2>ПОДБОР МОДЕЛИ ЭЛЕКТРОСАМОКАТА</h2>
@@ -240,7 +240,7 @@
     </div>
     
 </section>
-<section class="wide-promo-section container">   <!-- Широкий баннер акции с дроном -->
+<section class="wide-promo-section container" id="dost">   <!-- Широкий баннер акции с дроном -->
     <div class="wide-banner">
         <img src="img/dron.png" alt="Квадрокоптер" class="wide-banner-img">
         <div class="wide-banner-text">
@@ -250,7 +250,7 @@
         </div>
     </div>
 </section>
-<section class="categories-section container">   <!-- Блок популярных категорий с менеджером -->
+<section class="categories-section container" id="act">   <!-- Блок популярных категорий с менеджером -->
     <div class="section-header">
         <h2>ПОПУЛЯРНЫЕ КАТЕГОРИИ</h2>
         <div class="manager-widget">
@@ -297,7 +297,7 @@
         <button class="btn-outline-main">Смотреть все</button>
     </div>
  </section>
-    <section class="about-dealer container">   <!-- Блок "Официальный дилер" с тест-драйвом -->
+    <section class="about-dealer container" id="sotr">   <!-- Блок "Официальный дилер" с тест-драйвом -->
         
     <div class="dealer-inner">
         <div class="dealer-image">
@@ -399,7 +399,7 @@
 </section>
 </section>
 </section>
-<section class="video-reviews container">   <!-- Видеообзоры с YouTube -->
+<section class="video-reviews container" id="vlog">   <!-- Видеообзоры с YouTube -->
     <div class="video-header">
         <div class="header-left">
             <h2>ВИДЕООБЗОРЫ</h2>
@@ -531,10 +531,10 @@
 </section>
     </main>
 
-    <footer class="footer">   <!-- Подвал -->
+    <footer class="footer" id="contacts" >   <!-- Подвал -->
         <div class="footer-subscribe">   <!-- Блок подписки на новости -->
             <div class="container subscribe-container">
-                <div class="subscribe-text">ОСТАВЬТЕ СВОЮ ПОЧТУ И СТАНЬТЕ ПЕРВЫМ,<br>КТО ПОЛУЧИТ СКИДКУ НА НОВЫЕ САМОКАТЫ</div>
+                <div class="subscribe-text" id="call">ОСТАВЬТЕ СВОЮ ПОЧТУ И СТАНЬТЕ ПЕРВЫМ,<br>КТО ПОЛУЧИТ СКИДКУ НА НОВЫЕ САМОКАТЫ</div>
                 <form class="subscribe-form">
                     <input type="email" placeholder="Введите Ваш email">
                     <button type="submit" class="btn-white">Подписаться</button>
@@ -645,15 +645,15 @@
         <button class="close-mobile-menu" id="closeNavMenuBtn">✕</button>
     </div>
     <div class="mobile-nav-list">
-        <a href="#">О магазине</a>
-        <a href="#">Доставка и оплата </a>
-        <a href="#">Тест-драйв</a>
-        <a href="#">Блог</a>
-        <a href="#">Контакты</a>
-        <a href="#">Акции <span class="badge badge-round">%</span></a>
-        <a href="#">Сервис</a>
-        <a href="#">Сотрудничество</a>
-        <a href="#">Заказать звонок</a>
+        <a href="#hero">О магазине</a>
+        <a href="#dost">Доставка и оплата </a>
+        <a href="#test">Тест-драйв</a>
+        <a href="#vlog">Блог</a>
+        <a href="#contacts">Контакты</a>
+        <a href="#act">Акции <span class="badge badge-round">%</span></a>
+        <a href="#test">Сервис</a>
+        <a href="#sotr">Сотрудничество</a>
+        <a href="#call">Заказать звонок</a>
     </div>
     <div class="mobile-nav-contacts">
         <a href="tel:+78005055461" class="phone">+7 (800) 505-54-61</a>
