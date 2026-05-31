@@ -1360,6 +1360,9 @@ ul {
     .header-bottom {
         display: none;
     }
+    .testdrive-badge{
+        display: none;
+    }
     .burger-nav-btn {
         display: block;
         width: 32px;
