@@ -1,13 +1,14 @@
 /* ================= VARIABLES & RESET ================= */
 :root {
-    --purple: #5d59d4;
-    --purple-hover: #5650de;
-    --text-dark: #222222;
-    --text-gray: #7a7a7a;
+   --purple: #6F73EE;
+    --purple-hover: #6F73EE;
+    --text-dark: #282739;
+    --text-gray: #5D6C7B;
     --bg-light: #f4f6f8;
     --border-color: #eaeaea;
     --white: #ffffff;
     --font-main: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
 }
 
 * {
@@ -40,7 +41,7 @@ ul {
 /* Резиновый контейнер для десктопа */
 .container {
     max-width: 100%;
-    width: 100%;
+    width: 98%;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -737,13 +738,7 @@ a {
     gap: 10px;
    
 }
-.promo-banners {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    justify-content: center;    /* центрируем карточки по горизонтали */
-    gap: 20px;
-    padding: 20px 0;
-}
+
 
 .banner-card {
     border-radius: 12px;
@@ -817,7 +812,7 @@ a {
 .btn-buy-click:hover { background: var(--purple-hover); }
 .center-btn-wrap { text-align: center; }
 .btn-outline-main { background: none; border: 1px solid var(--purple); color: var(--purple); padding: 12px 30px; border-radius: 6px; font-weight: 600; cursor: pointer; }
-.link-arrow { color: var(--purple); font-weight: 600; }
+
 /* Двойные баннеры */
 .promo-banners { display: flex; flex-wrap: wrap; gap: 20px; padding: 20px; }
 .banner-half {
@@ -836,14 +831,7 @@ a {
 
 /* Широкий баннер */
 .wide-promo-section { padding: 20px; }
-.wide-banner {
-  
-    border-radius: 12px;
-    padding: 50px;
-    color: #fff;
-}
-.wide-banner-text { max-width: 50%; }
-.wide-banner h2 { font-size: 28px; margin: 15px 0 25px; }
+
 .btn-white-promo { background: #fff; border: none; padding: 12px 30px; border-radius: 6px; font-weight: 600; cursor: pointer; }
 
 /* Категории */
@@ -1545,7 +1533,7 @@ margin-top: 30px;}
 /* ================== ADAPTIVE 480PX =================== */
 /* ===================================================== */
 
-@media (max-width: 480px) {
+@media (max-width: 572px) {
     body {
         overflow-x: hidden;
     }
@@ -1878,9 +1866,7 @@ margin-top: 30px;}
     .online-chat {
         justify-content: center;
     }
-      .burger-nav-btn {
-        display: block;
-    }
+
     .header-bottom {
         display: none;
     }
