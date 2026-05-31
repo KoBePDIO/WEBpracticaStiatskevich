@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kugoo - Электросамокаты</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap-extensions.css">
+
+</head>
+<body>
+    <!-- Bootstrap Navbar -->
+   <header class="header">
+    <!-- Строка 1: ссылки, соцсети, телефон -->
+    <div class="header-top">
+        <div class="container top-container">
+            <nav class="top-nav">
+                <a href="#">Сервис</a>
+                <a href="#">Сотрудничество</a>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#callbackModal">Заказать звонок</a>
+                <div class="social-icons">
+                    <a href="#">Viber</a>
+                    <a href="#">Wa</a>
+                    <a href="#">Tg</a>
+                </div>
+            </nav>
+            <a href="tel:+78005055461" class="phone">+7 (800) 505-54-61 <strong>+</strong></a>
+        </div>
+    </div>
+
+    <!-- Строка 2: лого, каталог, поиск, иконки -->
+    <div class="header-main">
+        <div class="container main-container">
+            <button class="burger-nav-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">☰</button>
+            <a href="#" class="logo">KUGOO</a>
+            <button class="btn-catalog"><span>≡</span> Каталог</button>
+            <div class="search-bar">
+                <select class="search-select"><option>Везде</option></select>
+                <input type="text" placeholder="Искать самокат KUGOO">
+                <button class="btn-search">🔍</button>
+            </div>
+            <div class="user-actions">
+                <a href="#" class="action-icon" data-bs-toggle="modal" data-bs-target="#compareModal">⚖️</a>
+                <a href="#" class="action-icon" data-bs-toggle="modal" data-bs-target="#wishlistModal">♡</a>
+                <a href="#" class="action-cart" data-bs-toggle="modal" data-bs-target="#cartModal">
+                    <span class="cart-icon">🛒</span>
+                    <span>Корзина</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Строка 3: нижнее меню -->
+    <div class="header-bottom">
+        <div class="container">
+            <nav class="bottom-nav">
+                <a href="#hero">О магазине</a>
+                <a href="#dost">Доставка и оплата</a>
+                <a href="#test">Тест-драйв</a>
+                <a href="#vlog">Блог</a>
+                <a href="#contacts">Контакты</a>
+                <div class="dropdown d-inline-block">
+                    <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">Акции <span class="badge badge-round">%</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Скидка 10%</a></li>
+                        <li><a class="dropdown-item" href="#">Бесплатная доставка</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+    <main class="main-content">
+        <!-- Hero Section with Bootstrap Grid -->
+      <section class="hero-section" id="hero">
+    <div class="container">
+        <div class="hero-banner">
+            <!-- левая и правая часть баннера -->
+            <div class="row w-100 g-0">
+                <div class="col-12 col-lg-6">
+                    <div class="hero-text-block">
+                        <span class="badge-outline">Новинка</span>
+                        <h1>ЭЛЕКТРОСАМОКАТЫ KUGOO KIRIN<br>ОТ ОФИЦИАЛЬНОГО ДИЛЕРА</h1>
+                        <p>с бесплатной доставкой по РФ от 1 дня</p>
+                        <a href="#catalog" class="btn btn-primary">Перейти в каталог</a>
+                        <div class="slider-controls">
+                            <button class="arrow-btn">&lt;</button>
+                            <span class="slider-dots">1 — 5</span>
+                            <button class="arrow-btn">&gt;</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="hero-image-block">
+                        <img src="img/sam.png" alt="Kugoo Kirin" class="hero-scooter-img">
+                   <div class="testdrive-badge" data-bs-toggle="popover" title="Тест-драйв">⚡ Тест-драйв и обучение <strong>БЕСПЛАТНО</strong></div>
+                    </div>
+                </div>
+            </div>
+        </div>  <!-- закрыли hero-banner -->
+
+        <!-- Блок преимуществ — теперь СНАРУЖИ баннера, под ним -->
+        <div class="hero-features row w-100 mt-4">
+            <div class="col-6 col-sm-6 col-md-3">
+                <div class="feature-item">
+                    <strong>ГАРАНТИЯ 1 ГОД</strong>
+                    <span>на весь ассортимент</span>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-3">
+                <div class="feature-item">
+                    <strong>РАССРОЧКА</strong>
+                    <span>от 6 месяцев</span>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-3">
+                <div class="feature-item">
+                    <strong>ПОДАРКИ</strong>
+                    <span>и бонусы к покупкам</span>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-3">
+                <div class="yandex-reviews">
+                    <span class="yandex-logo">Я</span>
+                    <div class="reviews-text">
+                        <small><b>Яндекс отзывы</b></small>
+                        <strong>⭐ 4,9</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Catalog Section with Bootstrap Grid -->
+        <section id="catalog" class="catalog-section">
+            <div class="container">
+                <div class="row g-3">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card product-card">
+                            <div class="card-top d-flex justify-content-between align-items-start">
+                                <span class="badge badge-hit">ХИТ</span>
+                                <button class="btn btn-compare" title="Сравнить" data-bs-toggle="tooltip">⚖️</button>
+                            </div>
+                            <div class="card-img-wrap text-center">
+                                <img src="img/card.jpg" alt="Kugoo Kirin M4" class="card-img">
+                            </div>
+                            <div class="card-body p-0">
+                                <h5 class="card-title">Kugoo Kirin M4</h5>
+                                <div class="card-specs">
+                                    <div class="spec-item">🔋 2000 mAh</div>
+                                    <div class="spec-item">⚡ 1,2 л.с.</div>
+                                    <div class="spec-item">💨 60 км/ч</div>
+                                    <div class="spec-item">⏱️ 5 часов</div>
+                                </div>
+                                <div class="card-price-block align-items-end">
+                                    <div class="price-old">39 900 ₽</div>
+                                    <div class="price-current">29 900 ₽</div>
+                                    <div class="card-actions ms-auto gap-2">
+                                        <button class="btn btn-sm btn-outline-secondary" title="Добавить в корзину" data-bs-toggle="tooltip" >🛒</button>
+                                        <button class="btn btn-sm btn-fav" title="Добавить в избранное" data-bs-toggle="tooltip">♡</button>
+                                    </div>
+                                </div>
+                                <button class="btn btn-buy-click w-100 mt-3" data-bs-toggle="modal" data-bs-target="#buyModal">Купить в 1 клик</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card product-card">
+                            <div class="card-top d-flex justify-content-between align-items-start">
+                                <span class="badge badge-hit">ХИТ</span>
+                                <button class="btn btn-compare" title="Сравнить" data-bs-toggle="tooltip">⚖️</button>
+                            </div>
+                            <div class="card-img-wrap text-center">
+                                <img src="img/card.jpg" alt="Kugoo Kirin M4" class="card-img">
+                            </div>
+                            <div class="card-body p-0">
+                                <h5 class="card-title">Kugoo Kirin M4</h5>
+                                <div class="card-specs">
+                                    <div class="spec-item">🔋 2000 mAh</div>
+                                    <div class="spec-item">⚡ 1,2 л.с.</div>
+                                    <div class="spec-item">💨 60 км/ч</div>
+                                    <div class="spec-item">⏱️ 5 часов</div>
+                                </div>
+                                <div class="card-price-block align-items-end">
+                                    <div class="price-old">39 900 ₽</div>
+                                    <div class="price-current">29 900 ₽</div>
+                                    <div class="card-actions ms-auto gap-2">
+                                        <button class="btn btn-sm btn-outline-secondary" title="Добавить в корзину" data-bs-toggle="tooltip">🛒</button>
+                                        <button class="btn btn-sm btn-fav" title="Добавить в избранное" data-bs-toggle="tooltip">♡</button>
+                                    </div>
+                                </div>
+                                <button class="btn btn-buy-click w-100 mt-3" data-bs-toggle="modal" data-bs-target="#buyModal">Купить в 1 клик</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card product-card">
+                            <div class="card-top d-flex justify-content-between align-items-start">
+                                <span class="badge badge-hit">ХИТ</span>
+                                <button class="btn btn-compare" title="Сравнить" data-bs-toggle="tooltip2">⚖️</button>
+                            </div>
+                            <div class="card-img-wrap text-center">
+                                <img src="img/card.jpg" alt="Kugoo Kirin M4" class="card-img">
+                            </div>
+                            <div class="card-body p-0">
+                                <h5 class="card-title">Kugoo Kirin M4</h5>
+                                <div class="card-specs">
+                                    <div class="spec-item">🔋 2000 mAh</div>
+                                    <div class="spec-item">⚡ 1,2 л.с.</div>
+                                    <div class="spec-item">💨 60 км/ч</div>
+                                    <div class="spec-item">⏱️ 5 часов</div>
+                                </div>
+                                <div class="card-price-block align-items-end">
+                                    <div class="price-old">39 900 ₽</div>
+                                    <div class="price-current">29 900 ₽</div>
+                                    <div class="card-actions ms-auto gap-2">
+                                        <button class="btn btn-sm btn-outline-secondary" title="Добавить в корзину" data-bs-toggle="tooltip">🛒</button>
+                                        <button class="btn btn-sm btn-fav" title="Добавить в избранное" data-bs-toggle="tooltip">♡</button>
+                                    </div>
+                                </div>
+                                <button class="btn btn-buy-click w-100 mt-3" data-bs-toggle="modal" data-bs-target="#buyModal">Купить в 1 клик</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card product-card">
+                            <div class="card-top d-flex justify-content-between align-items-start">
+                                <span class="badge badge-hit">ХИТ</span>
+                                <button class="btn btn-compare" title="Сравнить" data-bs-toggle="tooltip">⚖️</button>
+                            </div>
+                            <div class="card-img-wrap text-center">
+                                <img src="img/card.jpg" alt="Kugoo Kirin M4" class="card-img">
+                            </div>
+                            <div class="card-body p-0">
+                                <h5 class="card-title">Kugoo Kirin M4</h5>
+                                <div class="card-specs">
+                                    <div class="spec-item">🔋 2000 mAh</div>
+                                    <div class="spec-item">⚡ 1,2 л.с.</div>
+                                    <div class="spec-item">💨 60 км/ч</div>
+                                    <div class="spec-item">⏱️ 5 часов</div>
+                                </div>
+                                <div class="card-price-block align-items-end">
+                                    <div class="price-old">39 900 ₽</div>
+                                    <div class="price-current">29 900 ₽</div>
+                                    <div class="card-actions ms-auto gap-2">
+                                        <button class="btn btn-sm btn-outline-secondary" title="Добавить в корзину" data-bs-toggle="tooltip">🛒</button>
+                                        <button class="btn btn-sm btn-fav" title="Добавить в избранное" data-bs-toggle="tooltip">♡</button>
+                                    </div>
+                                </div>
+                                <button class="btn btn-buy-click w-100 mt-3" data-bs-toggle="modal" data-bs-target="#buyModal">Купить в 1 клик</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress mt-2" style="height: 6px;">
+    <div class="progress-bar bg-purple" style="width: 40%;" role="progressbar"></div>
+</div>
+<small class="text-muted">Осталось 4 шт.</small>
+                <div class="row mt-5">
+                    <div class="col-12 text-center">
+                        <button class="btn btn-outline-main">Смотреть все</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Promo Banners with Bootstrap Grid -->
+        <section class="promo-section" id="test">
+            <div class="container">
+                <div class="row g-3">
+                    <div class="col-12 col-md-6">
+                        <div class="card banner-card banner-light banner-half">
+                            <div class="card-body banner-content">
+                                <h2>ПОДБОР МОДЕЛИ ЭЛЕКТРОСАМОКАТА</h2>
+                                <p>Пройдите тест и выберите электросамокат по своим критериям</p>
+                                <a href="#" class="link-arrow">Подобрать модель →</a>
+                            </div>
+                            <img src="img/wheel.png" alt="Самокат" class="banner-img">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="card banner-card banner-purple banner-half">
+                            <div class="card-body banner-content">
+                                <h2>СЕРВИСНОЕ ОБСЛУЖИВАНИЕ</h2>
+                                <p>Крупнейший сервисный центр в России для продуктов Kugoo</p>
+                                <a href="#" class="link-arrow">Подобрать модель →</a>
+                            </div>
+                            <img src="img/woman.png" alt="Сервисное обслуживание" class="banner-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wide Banner with Bootstrap Grid -->
+        <section class="wide-promo-section" id="dost">
+            <div class="container">
+                <div class="card wide-banner">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-12 col-md-5">
+                            <img src="img/dron.png" alt="Квадрокоптер" class="wide-banner-img">
+                        </div>
+                        <div class="col-12 col-md-7">
+                            <div class="wide-banner-text">
+                                <span class="badge bg-danger">Акция</span>
+                                <h2>БЕСПЛАТНАЯ ДОСТАВКА ЭЛЕКТРОСАМОКАТОВ ПО РОССИИ ДО 01.09</h2>
+                        <button class="btn btn-light" data-bs-toggle="popover" data-bs-trigger="click" data-bs-placement="bottom" data-bs-title="Акция" data-bs-content="Бесплатная доставка по всей России до 1 сентября!">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories Section with Bootstrap Grid -->
+        <section class="categories-section" id="act">
+            <div class="container">
+                <div class="row align-items-center mb-4">
+                    <div class="col-12 col-md-9">
+                        <h2>ПОПУЛЯРНЫЕ КАТЕГОРИИ</h2>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <div class="card manager-widget">
+                            <div class="card-body d-flex align-items-start gap-3">
+                                <img src="img/manager.png" alt="Менеджер" class="manager-avatar">
+                                <div>
+                                    <p class="mb-2 small">Менеджер ответит на любой ваш вопрос о продуктах Kugoo</p>
+                                    <a href="#" class="link-arrow">Задать вопрос</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-3">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card category-card" style="background-image: url('img/1cat.jpg');">
+                            <div class="category-content">
+                                <h5 class="text-white">Роботы-пылесосы</h5>
+                                <p class="text-white-50">от 29 900 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card category-card" style="background-image: url('img/2cat.jpg');">
+                            <div class="category-content">
+                                <h5 class="text-white">Весы</h5>
+                                <p class="text-white-50">от 29 900 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card category-card" style="background-image: url('img/3cat.jpg');">
+                            <div class="category-content">
+                                <h5 class="text-white">Электросамокаты</h5>
+                                <p class="text-white-50">от 29 900 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card category-card" style="background-image: url('img/1cat.jpg');">
+                            <div class="category-content">
+                                <h5 class="text-white">Роботы-пылесосы</h5>
+                                <p class="text-white-50">от 29 900 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-12 text-center">
+                        <button class="btn btn-outline-main">Смотреть все</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Dealer Section -->
+        <section class="about-dealer" id="sotr">
+            <div class="container">
+                <div class="row g-4 align-items-start">
+                    <div class="col-12 col-lg-6">
+                        <div class="card dealer-image position-relative">
+                            <img src="img/deal.jpg" alt="Kugoo Official Dealer" class="card-img">
+                            <div class="dealer-test-drive position-absolute">
+                                <h5>Тест-драйв в Москве</h5>
+                                <p>Оцените все преимущества самокатов лично</p>
+                                <a href="#" class="btn-arrow">Подробнее →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="dealer-content">
+                            <h2>KUGOO-RUSSIA — ПЕРВЫЙ ОФИЦИАЛЬНЫЙ ДИЛЕР KUGOO KIRIN В РОССИИ</h2>
+                            <p>Наша цель предоставить полный ассортимент современной продукции Kugoo Kirin, которая улучшает и упрощает жизнь. Стремимся подарить комфорт и эмоции, поэтому помогаем с выбором и внимательно относимся к сервисному обслуживанию.</p>
+                            
+                            <div class="card dealer-features">
+                                <div class="card-body">
+                                    <h5 class="card-title">Специализируемся исключительно на бренде Kugoo, поэтому вы получите:</h5>
+                                    <ul class="list-unstyled">
+                                        <li>• цены от завода-изготовителя Jilong;</li>
+                                        <li>• бесплатный тест-драйв самокатов;</li>
+                                        <li>• фирменную гарантию 1 год;</li>
+                                        <li>• ремонт и обслуживание от 1 дня в собственном сервисном центре;</li>
+                                        <li>• более 1 000 запчастей и аксессуаров в наличии.</li>
+                                    </ul>
+                                    <a href="#" class="link-arrow">Смотреть сертификат</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advantages Section -->
+        <section class="advantages-section">
+            <div class="container">
+                <h2 class="section-title text-center">ПРЕДЛАГАЕМ САМЫЕ ВЫГОДНЫЕ ЦЕНЫ НА ПРОДУКТЫ KUGOO ЗА СЧЕТ ПРЯМЫХ ПОСТАВОК</h2>
+                <p class="section-subtitle text-center">и заботимся об удобстве покупателей</p>
+
+                <!-- Bootstrap Tabs -->
+                <ul class="nav nav-tabs tabs d-flex justify-content-center" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link tab-btn active" id="pills-shop-tab" data-bs-toggle="pill" data-bs-target="#pills-shop" type="button" role="tab" aria-controls="pills-shop" aria-selected="true">Интернет-магазин</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link tab-btn" id="pills-service-tab" data-bs-toggle="pill" data-bs-target="#pills-service" type="button" role="tab" aria-controls="pills-service" aria-selected="false">Сервисный центр</button>
+                    </li>
+                </ul>
+
+                <div class="tab-content mt-4" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-shop" role="tabpanel" aria-labelledby="pills-shop-tab">
+                        <div class="row g-3">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card adv-card h-100">
+                                    <div class="card-body">
+                                        <div class="icon mb-3">🛒</div>
+                                        <h5 class="card-title">X товаров в каталоге</h5>
+                                        <p class="card-text">Выбирайте товар, который подходит по цене и характеристикам...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card adv-card h-100">
+                                    <div class="card-body">
+                                        <div class="icon mb-3">💳</div>
+                                        <h5 class="card-title">5 способов оплаты</h5>
+                                        <p class="card-text">Вы можете оплатить покупку наличными, картой, онлайн на сайте...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card adv-card h-100">
+                                    <div class="card-body">
+                                        <div class="icon mb-3">✅</div>
+                                        <h5 class="card-title">Полная документация и гарантия 1 год</h5>
+                                        <p class="card-text">При покупке вам выдается кассовый чек, товарный чек и гарантийный талон...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card adv-card h-100">
+                                    <div class="card-body">
+                                        <div class="icon mb-3">🚚</div>
+                                        <h5 class="card-title">Отправка заказа день в день</h5>
+                                        <p class="card-text">Отправляем заказы по всей России день в день или забирайте...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card adv-card h-100">
+                                    <div class="card-body">
+                                        <div class="icon mb-3">%</div>
+                                        <h5 class="card-title">Рассрочка без переплат</h5>
+                                        <p class="card-text">В нашем магазине можно приобрести любой товар в рассрочку...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card adv-card h-100 highlight">
+                                    <div class="card-body d-flex flex-column justify-content-center">
+                                        <img src="img/steer.png" alt="Рулевое" class="wide-categ-img mb-3">
+                                        <h5 class="card-title">Больше в каталоге</h5>
+                                        <a href="#" class="link-arrow">Перейти →</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-service" role="tabpanel" aria-labelledby="pills-service-tab">
+                        <div class="row g-3">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card adv-card h-100">
+                                    <div class="card-body">
+                                        <div class="icon mb-3">🔧</div>
+                                        <h5 class="card-title">Профессиональный ремонт</h5>
+                                        <p class="card-text">Опытные специалисты по ремонту техники Kugoo...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card adv-card h-100">
+                                    <div class="card-body">
+                                        <div class="icon mb-3">⏱️</div>
+                                        <h5 class="card-title">Быстрое обслуживание</h5>
+                                        <p class="card-text">Ремонт от 1 дня в собственном сервисном центре...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card adv-card h-100">
+                                    <div class="card-body">
+                                        <div class="icon mb-3">✓</div>
+                                        <h5 class="card-title">Гарантийное обслуживание</h5>
+                                        <p class="card-text">Полное гарантийное обслуживание на любые неполадки...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section class="reviews-section">
+            <div class="container">
+                <div class="position-relative">
+                    <img src="img/cover.jpg" alt="Видеоотзыв" class="img-fluid rounded" style="width: 100%; height: 400px; object-fit: cover;">
+                    <button class="btn btn-circle play-btn-circle" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);" data-bs-toggle="modal" data-bs-target="#videoModal">
+                        ▶
+                    </button>
+                </div>
+
+                <div class="row align-items-center mt-5 mb-4">
+                    <div class="col-12 col-md-6">
+                        <h2>ОТЗЫВЫ И ФОТО РЕАЛЬНЫХ ПОКУПАТЕЛЕЙ</h2>
+                    </div>
+                    <div class="col-12 col-md-6 text-md-end">
+                        <a href="#" class="link-arrow">Читать отзывы на Яндекс →</a>
+                    </div>
+                </div>
+
+                <!-- Photo Gallery with Bootstrap Grid -->
+                <div class="photos-gallery">
+                    <div class="row g-3">
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <img src="img/phot1.jpg" alt="Фото покупателя" class="img-fluid rounded" style="height: 180px; object-fit: cover; width: 100%; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <img src="img/phot2.jpg" alt="Фото покупателя" class="img-fluid rounded" style="height: 180px; object-fit: cover; width: 100%; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <img src="img/phot3.jpg" alt="Фото покупателя" class="img-fluid rounded" style="height: 180px; object-fit: cover; width: 100%; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <img src="img/phot4.jpg" alt="Фото покупателя" class="img-fluid rounded" style="height: 180px; object-fit: cover; width: 100%; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <img src="img/phot5.jpg" alt="Фото покупателя" class="img-fluid rounded" style="height: 180px; object-fit: cover; width: 100%; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <img src="img/phot1.jpg" alt="Фото покупателя" class="img-fluid rounded" style="height: 180px; object-fit: cover; width: 100%; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Reviews Section -->
+        <section class="video-reviews" id="vlog">
+            <div class="container">
+                <div class="row align-items-end mb-5">
+                    <div class="col-12 col-md-6">
+                        <h2>ВИДЕООБЗОРЫ</h2>
+                        <p class="text-muted">Узнайте больше о самокатах Kugoo и посмотрите сравнительные обзоры разных моделей на нашем YouTube-канале.</p>
+                    </div>
+                    <div class="col-12 col-md-6 text-md-end">
+                        <a href="#" class="link-all">Смотреть все видеообзоры →</a>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-12 col-lg-6">
+                        <div class="video-item featured position-relative">
+                            <img src="img/vcov1.jpg" alt="Обзор Kugoo X5 Plus" class="img-fluid rounded" style="width: 100%; aspect-ratio: 16/9; object-fit: cover;">
+                            <button class="btn btn-circle play-btn-circle" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);" data-bs-toggle="modal" data-bs-target="#videoModal">
+                                ▶
+                            </button>
+                            <h5 class="mt-3">Крутой и городской? Обзор Kugoo X5 Plus</h5>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="video-item position-relative">
+                            <img src="img/vcov2.jpg" alt="Обзор Kugoo X5 Plus" class="img-fluid rounded" style="width: 100%; aspect-ratio: 16/9; object-fit: cover;">
+                            <button class="btn btn-circle play-btn-circle" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);" data-bs-toggle="modal" data-bs-target="#videoModal">
+                                ▶
+                            </button>
+                            <h6 class="mt-2">Крутой и городской? Обзор Kugoo X5 Plus</h6>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="video-item position-relative">
+                            <img src="img/vcov3.jpg" alt="Обзор Kugoo X5 Plus" class="img-fluid rounded" style="width: 100%; aspect-ratio: 16/9; object-fit: cover;">
+                            <button class="btn btn-circle play-btn-circle" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);" data-bs-toggle="modal" data-bs-target="#videoModal">
+                                ▶
+                            </button>
+                            <h6 class="mt-2">Крутой и городской? Обзор Kugoo X5 Plus</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section class="blog-section">
+            <div class="container">
+                <h2 class="mb-4">НОВЫЕ СТАТЬИ В БЛОГЕ</h2>
+
+                <div class="row g-3">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card blog-card h-100">
+                            <img src="img/state.jpg" alt="Статья" class="card-img-top" style="height: 200px; object-fit: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title">Как правильно заряжать электросамокат</h5>
+                                <p class="card-text small">Один из первых вопросов, который волнует после покупки электросамоката.</p>
+                                <div class="blog-meta">
+                                    <span class="me-3">📅 01.09.2021</span>
+                                    <span>👁 53</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card blog-card h-100">
+                            <img src="img/state.jpg" alt="Статья" class="card-img-top" style="height: 200px; object-fit: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title">Как правильно заряжать электросамокат</h5>
+                                <p class="card-text small">Один из первых вопросов, который волнует после покупки электросамоката.</p>
+                                <div class="blog-meta">
+                                    <span class="me-3">📅 01.09.2021</span>
+                                    <span>👁 53</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card blog-card h-100">
+                            <img src="img/state.jpg" alt="Статья" class="card-img-top" style="height: 200px; object-fit: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title">Как правильно заряжать электросамокат</h5>
+                                <p class="card-text small">Один из первых вопросов, который волнует после покупки электросамоката.</p>
+                                <div class="blog-meta">
+                                    <span class="me-3">📅 01.09.2021</span>
+                                    <span>👁 53</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card blog-card h-100">
+                            <img src="img/state.jpg" alt="Статья" class="card-img-top" style="height: 200px; object-fit: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title">Как правильно заряжать электросамокат</h5>
+                                <p class="card-text small">Один из первых вопросов, который волнует после покупки электросамоката.</p>
+                                <div class="blog-meta">
+                                    <span class="me-3">📅 01.09.2021</span>
+                                    <span>👁 53</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section with Bootstrap Accordion -->
+        <section class="faq-section">
+            <div class="container">
+                <h2 class="section-title text-center mb-5">ОТВЕЧАЕМ НА ВОПРОСЫ ПОКУПАТЕЛЕЙ</h2>
+
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="false" aria-controls="faqOne">
+                                Есть ли гарантия того, что придет именно то, что было заказано? А если я оплачу и товар не придет?
+                            </button>
+                        </h2>
+                        <div id="faqOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p>Текст ответа на данный вопрос...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="true" aria-controls="faqTwo">
+                                Как осуществляется сервисное обслуживание в моем городе? Где гарантия, что меня обслужат?
+                            </button>
+                        </h2>
+                        <div id="faqTwo" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p>При покупке электросамоката у нас, вам выдается кассовый чек, товарный чек и гарантийный талон — эти документы дают право на гарантийное обслуживание на законодательном уровне.</p>
+                                <p>Наши сервисные центры находятся в Москве, Санкт-Петербурге и Краснодаре. В случае поломки вы можете обратиться туда.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">
+                                Могу ли я вернуть товар, если он мне не подошел?
+                            </button>
+                        </h2>
+                        <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p>Да, товар можно вернуть в течение 14 дней в надлежащем состоянии. Свяжитесь с нашей службой поддержки.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+        
+    <!-- Footer with Bootstrap Grid -->
+    <footer class="footer" id="contacts">
+        <!-- Subscribe Section -->
+        <div class="footer-subscribe">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-6 mb-3 mb-md-0">
+                        <h5 class="text-white mb-0">ОСТАВЬТЕ СВОЮ ПОЧТУ И СТАНЬТЕ ПЕРВЫМ, КТО ПОЛУЧИТ СКИДКУ НА НОВЫЕ САМОКАТЫ</h5>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <form class="d-flex gap-2">
+                            <input type="email" class="form-control" placeholder="Введите Ваш email" required>
+                            <button type="submit" class="btn btn-light">Подписаться</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Footer -->
+        <div class="footer-main">
+            <div class="container">
+                <div class="row g-4 mb-5">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <h5 class="footer-column-title">Каталог товаров</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-decoration-none text-muted">Электросамокаты</a></li>
+                            <li><a href="#" class="text-decoration-none text-muted">Электроскутеры</a></li>
+                            <li><a href="#" class="text-decoration-none text-muted">Электровелосипеды</a></li>
+                            <li><a href="#" class="text-decoration-none text-muted">Электровелосипеды</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <h5 class="footer-column-title">Покупателям</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-decoration-none text-muted">Сервисный центр</a></li>
+                            <li><a href="#" class="text-decoration-none text-muted">Доставка и оплата</a></li>
+                            <li><a href="#" class="text-decoration-none text-muted">Рассрочка</a></li>
+                            <li><a href="#" class="text-decoration-none text-muted">Тест-драйв</a></li>
+                            <li><a href="#" class="text-decoration-none text-muted">Блог</a></li>
+                            <li><a href="#" class="text-decoration-none text-muted">Сотрудничество</a></li>
+                            <li><a href="#" class="text-decoration-none text-muted">Контакты</a></li>
+                            <li><a href="#" class="text-decoration-none text-muted">Акции</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <h5 class="footer-column-title">
+                            Контакты 
+                            <a href="#" class="link-call">Заказать звонок</a>
+                        </h5>
+                        <div class="mb-3">
+                            <small class="text-muted d-block">Call-центр</small>
+                            <strong>+7 (800) 505-54-61</strong>
+                            <small class="text-muted d-block">Пн-Вс 10:00 - 20:00</small>
+                        </div>
+                        <div>
+                            <small class="text-muted d-block">Сервисный центр</small>
+                            <strong>+7 (499) 350-76-92</strong>
+                            <small class="text-muted d-block">Пн-Вс 10:00 - 20:00</small>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <h5 class="footer-column-title">Магазины</h5>
+                        <div class="mb-3">
+                            <small class="text-muted d-block">Москва</small>
+                            <p class="mb-0">ул. Ткацкая, 5 стр. 16</p>
+                        </div>
+                        <div class="mb-3">
+                            <small class="text-muted d-block">Санкт-Петербург</small>
+                            <p class="mb-0">ул. Фрунзе, 2</p>
+                        </div>
+                        <div>
+                            <small class="text-muted d-block">Краснодар</small>
+                            <p class="mb-0">ул. Восточно-Кругликовская, 86</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer Bottom -->
+                <hr class="my-4">
+                
+                <div class="row align-items-center py-4">
+                    <div class="col-12 col-md-4 text-center text-md-start mb-3 mb-md-0">
+                        <a href="#" class="logo-footer">KUGOO</a>
+                    </div>
+                    <div class="col-12 col-md-4 text-center">
+                        <div class="d-flex gap-2 justify-content-center justify-content-md-start flex-wrap">
+                            <a href="#" class="btn btn-sm btn-outline-secondary">Google Play</a>
+                            <a href="#" class="btn btn-sm btn-outline-secondary">App Store</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 text-center text-md-end">
+                        <div class="d-flex gap-2 justify-content-center justify-content-md-end flex-wrap">
+                            <a href="#" class="btn btn-sm btn-outline-secondary">Вконтакте</a>
+                            <a href="#" class="btn btn-sm btn-outline-secondary">Instagram</a>
+                            <a href="#" class="btn btn-sm btn-outline-secondary">YouTube</a>
+                            <a href="#" class="btn btn-sm btn-outline-secondary">Telegram</a>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="my-3">
+
+                <!-- Legal Info -->
+                <div class="row align-items-center py-3">
+                    <div class="col-12 col-md-6 text-center text-md-start mb-2 mb-md-0">
+                        <small class="text-muted">
+                            <a href="#" class="text-decoration-none text-muted me-3">Реквизиты</a>
+                            <a href="#" class="text-decoration-none text-muted">Политика конфиденциальности</a>
+                        </small>
+                    </div>
+                    <div class="col-12 col-md-6 text-center text-md-end">
+                        <small class="text-muted d-block mb-2">
+                            <strong>GPay / ApplePay / Visa / Mastercard</strong>
+                        </small>
+                        <small class="text-muted">
+                            Online чат: 
+                            <a href="#" class="text-decoration-none text-muted">Viber</a> • 
+                            <a href="#" class="text-decoration-none text-muted">WhatsApp</a> • 
+                            <a href="#" class="text-decoration-none text-muted">Telegram</a>
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Modal for "Buy in 1 Click" -->
+    <div class="modal fade" id="buyModal" tabindex="-1" aria-labelledby="buyModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="buyModalLabel">Купить в 1 клик</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="fullname" class="form-label">Полное имя *</label>
+                            <input type="text" class="form-control" id="fullname" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Номер телефона *</label>
+                            <input type="tel" class="form-control" id="phone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email *</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="product" class="form-label">Товар</label>
+                            <input type="text" class="form-control" id="product" placeholder="Kugoo Kirin M4" disabled>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="agreeTerms" required>
+                            <label class="form-check-label" for="agreeTerms">
+                                Согласен с условиями обработки данных
+                            </label>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                        <button type="submit" class="btn btn-primary">Отправить заказ</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Modal for Video -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="videoModalLabel">Видеообзор</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe width="100%" height="400" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Modal for Gallery -->
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="galleryModalLabel">Фото покупателя</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/phot1.jpg" alt="Фото" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Placeholder modals: cart, compare, wishlist -->
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModalLabel">Корзина</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Ваша корзина пока пуста. Это заглушка для демонстрации.</p>
+                    <ul class="list-unstyled">
+                        <li>— Товар 1 (пример)</li>
+                        <li>— Товар 2 (пример)</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#buyModal">Оформить заказ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="compareModal" tabindex="-1" aria-labelledby="compareModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="compareModalLabel">Сравнение</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Здесь будет список сравниваемых моделей (заглушка).</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="wishlistModal" tabindex="-1" aria-labelledby="wishlistModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="wishlistModalLabel">Избранное</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Ваше избранное пока пусто. Добавьте товары, чтобы сравнить или купить.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                    <a href="#catalog" class="btn btn-outline-primary">Перейти в каталог</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Меню</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="#hero">О магазине</a></li>
+      <li class="nav-item"><a class="nav-link" href="#dost">Доставка и оплата</a></li>
+      <li class="nav-item"><a class="nav-link" href="#test">Тест-драйв</a></li>
+      <li class="nav-item"><a class="nav-link" href="#vlog">Блог</a></li>
+      <li class="nav-item"><a class="nav-link" href="#contacts">Контакты</a></li>
+    </ul>
+  </div>
+</div>
+    <!-- Toast Container for Notifications -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="successToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header bg-success text-white">
+                <strong class="me-auto">✓ Успешно</strong>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Товар добавлен в корзину!
+            </div>
+        </div>
+    </div>
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="favToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header bg-success text-white">
+            <strong class="me-auto">✓ Успешно</strong>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+            Товар добавлен в избранное!
+        </div>
+    </div>
+</div>
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript for Bootstrap Components -->
+    <script>
+        
+    </script>
+    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
+   
+</body>
+</html>
