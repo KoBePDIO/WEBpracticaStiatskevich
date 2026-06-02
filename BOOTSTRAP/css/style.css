@@ -46,7 +46,9 @@ ul {
     color: var(--purple);
     text-decoration: underline;
 }
-.product-card:hover,
+.product-card:hover{
+    transform: translateY(-8px);
+}
 .blog-card:hover,
 .adv-card:hover {
     transform: translateY(-8px);
@@ -154,9 +156,7 @@ ul {
     transform-style: preserve-3d;
     perspective: 1000px;
 }
-.product-card:hover {
-    transform: rotateX(3deg) rotateY(-3deg) translateY(-8px);
-}
+
 .play-btn-circle {
     box-shadow: 0 0 10px rgba(144, 142, 203, 0.5), 0 0 25px rgba(93,89,212,0.3);
 }
@@ -175,19 +175,9 @@ ul {
     color: var(--text-gray);
     padding: 10px 0;
 }
-.top-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.top-nav {
-    display: flex;
-    gap: 25px;
-}
-.social-icons {
-    display: flex;
-    gap: 10px;
-}
+
+
+
 .phone {
     font-weight: 600;
     color: var(--text-dark);
@@ -195,12 +185,7 @@ ul {
 .header-main {
     padding: 25px 0;
 }
-.main-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-}
+
 .logo {
     font-size: 32px;
     font-weight: 800;
@@ -216,16 +201,12 @@ ul {
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+   
 }
 .btn-catalog:hover {
     background-color: var(--purple-hover);
 }
 .search-bar {
-    display: flex;
-    flex: 1;
     border: 2px solid var(--purple);
     border-radius: 6px;
     overflow: hidden;
@@ -237,12 +218,7 @@ ul {
     outline: none;
     border-right: 1px solid var(--border-color);
 }
-.search-bar input {
-    flex: 1;
-    border: none;
-    padding: 12px 15px;
-    outline: none;
-}
+/* .search-bar input – полностью убрать, все стили перенесены в inline или класс */
 .btn-search {
     background-color: var(--purple);
     color: var(--white);
@@ -253,30 +229,18 @@ ul {
 .btn-search:hover {
     background-color: var(--purple-hover);
 }
-.user-actions {
-    display: flex;
-    align-items: center;
-    gap: 25px;
-}
 .action-icon {
-    font-size: 20px;
+    font-size: 20px;           /* уникальный размер */
 }
+
 .action-cart {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-weight: 600;
+    font-weight: 600;          /* уникальное начертание */
 }
 .header-bottom {
     background-color: var(--bg-light);
     padding: 15px 0;
 }
-.bottom-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: 600;
-}
+
 .badge {
     font-size: 11px;
     padding: 4px 8px;
@@ -313,19 +277,21 @@ ul {
 .hero-banner {
     background-color: #6b66f5;
     border-radius: 20px;
-    display: flex;
-    min-height: 450px;
     position: relative;
     overflow: hidden;
 }
+
 .hero-text-block {
-    flex: 1;
     padding: 60px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
     z-index: 2;
+}
+.slider-controls {
+    margin-top: 40px;
+    color: var(--white);
+}
+.hero-image-block {
+    position: relative;
+    z-index: 1;
 }
 .badge-outline {
     border: 1px solid rgba(255,255,255,0.5);
@@ -355,13 +321,7 @@ ul {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     display: inline-block;
 }
-.slider-controls {
-    margin-top: 40px;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    color: var(--white);
-}
+
 .arrow-btn {
     background: rgba(255,255,255,0.2);
     color: var(--white);
@@ -374,11 +334,7 @@ ul {
 .arrow-btn:hover {
     background: rgba(255,255,255,0.4);
 }
-.hero-image-block {
-    flex: 1;
-    position: relative;
-    z-index: 1;
-}
+
 .hero-scooter-img {
     position: absolute;
     top: 50%;
@@ -387,10 +343,6 @@ ul {
     height: 120%;
     max-width: none;
     z-index: 1;
-}
-.feature-item {
-    display: flex;
-    flex-direction: column;
 }
 .feature-item strong {
     font-size: 18px;
@@ -401,9 +353,6 @@ ul {
     font-size: 14px;
 }
 .yandex-reviews {
-    display: flex;
-    align-items: center;
-    gap: 15px;
     background: var(--bg-light);
     padding: 10px 20px;
     border-radius: 8px;
@@ -415,9 +364,6 @@ ul {
     font-size: 24px;
     width: 40px;
     height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border-radius: 4px;
 }
 
@@ -429,16 +375,14 @@ ul {
     border: 1px solid var(--border-color);
     border-radius: 10px;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
     position: relative;
     background: #fff;
 }
-.card-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.card-price-block {
+    margin-bottom: 15px;  /* оставляем, если не подходит mb-3 */
 }
+/* Остальные стили (тени, hover, иконки) остаются без изменений */
+
 .card-badge {
     font-size: 11px;
     padding: 3px 8px;
@@ -469,20 +413,12 @@ ul {
     margin-bottom: 15px;
 }
 .card-specs {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    
     font-size: 13px;
     color: var(--text-gray);
     margin-bottom: 20px;
 }
-.card-price-block {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-top: auto;
-    margin-bottom: 15px;
-}
+
 .price-old {
     width: 100%;
     font-size: 13px;
@@ -494,11 +430,7 @@ ul {
     font-weight: 700;
     color: var(--text-dark);
 }
-.card-actions {
-    margin-left: auto;
-    display: flex;
-    gap: 8px;
-}
+
 .card-actions button {
     background: none;
     border: 1px solid var(--border-color);
@@ -541,7 +473,7 @@ ul {
 .banner-card {
     border-radius: 12px;
     padding: 30px;
-    display: flex;
+ 
     align-items: center;
     position: relative;
     overflow: hidden;
@@ -550,7 +482,6 @@ ul {
 .banner-light { background-color: #f0f4f8; }
 .banner-purple { background-color: #f1eefb; }
 .banner-content {
-    flex: 1;
     max-width: 60%;
     z-index: 2;
 }
@@ -582,8 +513,6 @@ ul {
     border-radius: 12px;
     padding: 50px;
     color: #fff;
-    display: flex;
-    align-items: center;
     position: relative;
     overflow: hidden;
 }
@@ -607,18 +536,9 @@ ul {
 .categories-section {
     padding: 40px 20px;
 }
-.section-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-bottom: 20px;
-}
+
 .manager-widget {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+
     background: var(--bg-light);
     padding: 10px 15px;
     border-radius: 8px;
@@ -637,8 +557,6 @@ ul {
     background-size: cover;
     background-position: center;
     position: relative;
-    display: flex;
-    align-items: flex-end;
     overflow: hidden;
 }
 .category-content {
@@ -758,8 +676,7 @@ ul {
 }
 .highlight {
     background: var(--bg-light);
-    display: flex;
-    flex-direction: column;
+
     justify-content: center;
 }
 .wide-categ-img {
@@ -816,13 +733,6 @@ ul {
 .video-reviews {
     padding: 60px 20px;
 }
-.video-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-bottom: 35px;
-    gap: 20px;
-}
 .header-left h2 {
     font-size: 32px;
     margin-bottom: 15px;
@@ -839,11 +749,7 @@ ul {
     font-size: 15px;
     white-space: nowrap;
 }
-.video-item {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
+
 .video-thumb {
     position: relative;
     width: 100%;
@@ -919,7 +825,6 @@ ul {
     margin-bottom: 15px;
 }
 .blog-meta {
-    display: flex;
     gap: 15px;
     font-size: 12px;
     color: #999;
@@ -951,13 +856,8 @@ ul {
     font-size: 18px;
     font-weight: 600;
 }
-.subscribe-form {
-    display: flex;
-    gap: 15px;
-    width: 50%;
-}
+
 .subscribe-form input {
-    flex: 1;
     padding: 12px 20px;
     border-radius: 6px;
     border: none;
@@ -992,16 +892,6 @@ ul {
     font-weight: normal;
     margin-left: 20px;
 }
-.contact-row, .stores-row {
-    display: flex;
-    gap: 40px;
-    margin-bottom: 25px;
-}
-.contact-block, .store-block {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
 .contact-block small, .store-block small {
     color: var(--text-gray);
 }
@@ -1011,19 +901,10 @@ ul {
 .footer-bottom {
     padding-bottom: 30px;
 }
-.bottom-apps-socials {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 30px;
-}
+
 .logo-footer {
     font-size: 28px;
     font-weight: 800;
-}
-.app-links, .social-links {
-    display: flex;
-    gap: 15px;
 }
 .app-btn, .social-btn {
     background: var(--white);
@@ -1042,52 +923,45 @@ ul {
     border-top: 1px solid var(--border-color);
     margin-bottom: 20px;
 }
-.bottom-legal {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 13px;
-    color: var(--text-gray);
-}
-.legal-links {
-    display: flex;
-    gap: 20px;
-}
-.online-chat {
-    display: flex;
-    gap: 10px;
+
+
+.search-bar {
+    border: 2px solid var(--purple);
+    border-radius: 6px;
+    overflow: hidden;
 }
 
+.search-select {
+    border: none;
+    background: var(--bg-light);
+    padding: 0 15px;
+    outline: none;
+    border-right: 1px solid var(--border-color);
+}
+
+.search-input {
+    border: none;
+    padding: 12px 15px;
+    outline: none;
+}
+
+.btn-search {
+    background-color: var(--purple);
+    color: var(--white);
+    border: none;
+    padding: 0 20px;
+    cursor: pointer;
+}
 /* ================= ADAPTIVE (ТОЛЬКО УНИКАЛЬНЫЕ ЭЛЕМЕНТЫ) ================= */
+@media (max-width: 950px){
+      .header-main .col-auto:has(.user-actions) {
+        display: none !important;
+    }
+}
 @media (max-width: 800px) {
-    .top-container {
-        flex-direction: column;
-        gap: 10px;
-        align-items: flex-start;
-    }
-    .top-nav {
-        flex-wrap: wrap;
-        gap: 15px;
-    }
-    .main-container {
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-    .search-bar {
-        display: none;
-    }
+    .search-bar{display: none;}
     .user-actions {
         margin-left: auto;
-    }
-    .bottom-nav {
-        flex-wrap: wrap;
-        gap: 15px;
-        justify-content: flex-start;
-    }
-    .hero-banner {
-        flex-direction: column;
-        min-height: auto;
-        padding-bottom: 20px;
     }
     .hero-text-block {
         padding: 30px 25px;
@@ -1095,14 +969,7 @@ ul {
     .hero-text-block h1 {
         font-size: 28px;
     }
-    .hero-image-block {
-        position: relative;
-        width: 100%;
-        min-height: 320px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+   
     .hero-scooter-img {
         position: relative !important;
         top: auto !important;
@@ -1116,15 +983,7 @@ ul {
         animation: none;
     }
     .feature-item,
-    .yandex-reviews {
-        background: #f4f6f8;
-        border-radius: 14px;
-        padding: 22px;
-        min-height: 110px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+    
     .feature-item strong {
         font-size: 16px;
         line-height: 1.3;
@@ -1134,12 +993,7 @@ ul {
         font-size: 14px;
         line-height: 1.4;
     }
-    .yandex-reviews {
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: 16px;
-    }
+  
     .banner-card {
         min-height: 260px;
     }
@@ -1162,67 +1016,48 @@ ul {
     .wide-banner-text {
         max-width: 100%;
     }
-    .section-header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
     .manager-widget {
         max-width: 100%;
-    }
-    .dealer-inner {
-        flex-direction: column;
-    }
-    .subscribe-container {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 20px;
     }
     .subscribe-form {
         width: 100%;
     }
-    .footer-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 35px;
-    }
-    .contacts-column {
-        grid-column: span 2;
-    }
-    .contact-row, .stores-row {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-    }
-    .bottom-apps-socials {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 20px;
-    }
-    .app-links, .social-links {
-        flex-wrap: wrap;
-    }
-    .bottom-legal {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 15px;
-    }
+
     .burger-nav-btn {
         display: block;
     }
-    .header-bottom {
+   
+    .top-container{
         display: none;
     }
+    .social-icons{
+        display: none;
+    }
+    .burger-nav-btn{
+        display:none;
+    }
+     .ic-f{
+        display: none;
+    }
+     .header-main .search-bar {
+        display: none!important;
+    }
+     .header-top {
+        display: none;
+    }
+    .btn-catalog{
+        width: 100%;
+    }
+
 }
 @media (max-width: 572px) {
+    .header-main .col-auto:has(.user-actions) {
+        display: none !important;
+    }
     .header-top {
         display: none;
     }
-    .main-container {
-        display: grid;
-        grid-template-columns: auto auto 1fr;
-        align-items: center;
-        gap: 10px;
-    }
+
     .logo {
         font-size: 22px;
     }
@@ -1237,21 +1072,15 @@ ul {
     .user-actions {
         display: none;
     }
-    .search-bar {
-        display: none;
-    }
-    .bottom-nav {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 12px;
-    }
+
+
+ 
     .hero-section {
         padding: 15px 0;
     }
     .hero-banner {
         border-radius: 14px;
-        flex-direction: column;
-        padding-bottom: 15px;
+       
     }
     .hero-text-block {
         padding: 20px 16px;
@@ -1272,8 +1101,7 @@ ul {
     }
     .hero-image-block {
         min-height: auto;
-        display: flex;
-        flex-direction: column;
+      
         align-items: center;
         justify-content: center;
     }
@@ -1286,8 +1114,7 @@ ul {
         animation: none;
     }
     .hero-features {
-        display: flex;
-        flex-direction: column;
+
         gap: 14px;
         padding: 25px 0;
     }
@@ -1309,6 +1136,13 @@ ul {
     .dealer-content h2 {
         font-size: 22px;
     }
+     
+    .search-input{
+        display: none;
+    }
+    .search-select{
+        display: none;
+    }
     .dealer-test-drive {
         position: static;
         margin-top: 15px;
@@ -1321,38 +1155,15 @@ ul {
         height: 40px;
         font-size: 14px;
     }
-    .video-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-    }
     .subscribe-text {
         font-size: 16px;
     }
-    .subscribe-form {
-        flex-direction: column;
-        gap: 10px;
-    }
+  
     .subscribe-form input, .btn-white {
         width: 100%;
     }
     .footer-column h4 {
         font-size: 16px;
-    }
-    .bottom-apps-socials {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .app-links, .social-links, .legal-links {
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    .bottom-legal {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 12px;
     }
     .online-chat {
         justify-content: center;
@@ -1370,5 +1181,7 @@ ul {
         padding: 0;
         font-size: 28px;
     }
-  
+    .ic-f{
+        display: none;
+    }
 }

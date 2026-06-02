@@ -17,11 +17,11 @@
     <!-- Строка 1: ссылки, соцсети, телефон -->
     <div class="header-top">
         <div class="container top-container">
-            <nav class="top-nav">
+            <nav class="top-nav d-flex gap-4">
                 <a href="#">Сервис</a>
                 <a href="#">Сотрудничество</a>
                 <a href="#" data-bs-toggle="modal" data-bs-target="#callbackModal">Заказать звонок</a>
-                <div class="social-icons">
+                <div class="social-icons d-flex gap-2">
                     <a href="#">Viber</a>
                     <a href="#">Wa</a>
                     <a href="#">Tg</a>
@@ -33,30 +33,53 @@
 
     <!-- Строка 2: лого, каталог, поиск, иконки -->
     <div class="header-main">
-        <div class="container main-container">
-            <button class="burger-nav-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">☰</button>
-            <a href="#" class="logo">KUGOO</a>
-            <button class="btn-catalog"><span>≡</span> Каталог</button>
-            <div class="search-bar">
-                <select class="search-select"><option>Везде</option></select>
-                <input type="text" placeholder="Искать самокат KUGOO">
-                <button class="btn-search">🔍</button>
+    <div class="container">
+        <div class="row align-items-center gy-2 gx-3">
+            <!-- Бургер-кнопка (видна только на мобильных) -->
+            <div class="col-auto d-lg-none">
+                <button class="burger-nav-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+                    ☰
+                </button>
             </div>
-            <div class="user-actions">
-                <a href="#" class="action-icon" data-bs-toggle="modal" data-bs-target="#compareModal">⚖️</a>
-                <a href="#" class="action-icon" data-bs-toggle="modal" data-bs-target="#wishlistModal">♡</a>
-                <a href="#" class="action-cart" data-bs-toggle="modal" data-bs-target="#cartModal">
-                    <span class="cart-icon">🛒</span>
-                    <span>Корзина</span>
-                </a>
+
+            <!-- Логотип -->
+            <div class="col-auto">
+                <a href="#" class="logo">KUGOO</a>
+            </div>
+
+           <!-- Кнопка "Каталог" (всегда видна) -->
+            <div class="col-auto">
+                <button class="btn-catalog"><span>≡</span> Каталог</button>
+            </div>
+
+            <!-- Поисковая строка (растягивается) -->
+            <div class="col">
+                <div class="search-bar d-flex">
+                    <select class="search-select"><option>Везде</option></select>
+                    <input type="text" class="flex-grow-1 search-input" placeholder="Искать самокат KUGOO">
+                    <button class="btn-search">🔍</button>
+                </div>
+            </div>
+
+            <!-- Иконки действий (корзина, сравнение, избранное) – теперь внутри той же строки -->
+            <div class="col-auto">
+                <div class="user-actions d-flex align-items-center gap-4">
+                    <a href="#" class="action-icon" data-bs-toggle="modal" data-bs-target="#compareModal">⚖️</a>
+                    <a href="#" class="action-icon" data-bs-toggle="modal" data-bs-target="#wishlistModal">♡</a>
+                    <a href="#" class="action-cart d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#cartModal">
+                        <span class="cart-icon">🛒</span>
+                        <span>Корзина</span>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
+</div>
 
     <!-- Строка 3: нижнее меню -->
     <div class="header-bottom">
         <div class="container">
-            <nav class="bottom-nav">
+            <nav class="bottom-nav d-flex justify-content-between align-items-center fw-semibold flex-wrap gap-3">
                 <a href="#hero">О магазине</a>
                 <a href="#dost">Доставка и оплата</a>
                 <a href="#test">Тест-драйв</a>
@@ -79,15 +102,14 @@
       <section class="hero-section" id="hero">
     <div class="container">
         <div class="hero-banner">
-            <!-- левая и правая часть баннера -->
             <div class="row w-100 g-0">
                 <div class="col-12 col-lg-6">
-                    <div class="hero-text-block">
+                    <div class="hero-text-block d-flex flex-column justify-content-center align-items-start">
                         <span class="badge-outline">Новинка</span>
                         <h1>ЭЛЕКТРОСАМОКАТЫ KUGOO KIRIN<br>ОТ ОФИЦИАЛЬНОГО ДИЛЕРА</h1>
                         <p>с бесплатной доставкой по РФ от 1 дня</p>
                         <a href="#catalog" class="btn btn-primary">Перейти в каталог</a>
-                        <div class="slider-controls">
+                        <div class="slider-controls d-flex align-items-center gap-3">
                             <button class="arrow-btn">&lt;</button>
                             <span class="slider-dots">1 — 5</span>
                             <button class="arrow-btn">&gt;</button>
@@ -95,54 +117,53 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-6">
-                    <div class="hero-image-block">
+                    <div class="hero-image-block position-relative" style="z-index: 1;">
                         <img src="img/sam.png" alt="Kugoo Kirin" class="hero-scooter-img">
-                   <div class="testdrive-badge" data-bs-toggle="popover" title="Тест-драйв">⚡ Тест-драйв и обучение <strong>БЕСПЛАТНО</strong></div>
-                    </div>
-                </div>
-            </div>
-        </div>  <!-- закрыли hero-banner -->
-
-        <!-- Блок преимуществ -->
-        <div class="hero-features row w-100 mt-4">
-            <div class="col-6 col-sm-6 col-md-3">
-                <div class="feature-item">
-                    <strong>ГАРАНТИЯ 1 ГОД</strong>
-                    <span>на весь ассортимент</span>
-                </div>
-            </div>
-            <div class="col-6 col-sm-6 col-md-3">
-                <div class="feature-item">
-                    <strong>РАССРОЧКА</strong>
-                    <span>от 6 месяцев</span>
-                </div>
-            </div>
-            <div class="col-6 col-sm-6 col-md-3">
-                <div class="feature-item">
-                    <strong>ПОДАРКИ</strong>
-                    <span>и бонусы к покупкам</span>
-                </div>
-            </div>
-            <div class="col-6 col-sm-6 col-md-3">
-                <div class="yandex-reviews">
-                    <span class="yandex-logo">Я</span>
-                    <div class="reviews-text">
-                        <small><b>Яндекс отзывы</b></small>
-                        <strong>⭐ 4,9</strong>
+                        <div class="testdrive-badge" data-bs-toggle="popover" title="Тест-драйв">⚡ Тест-драйв и обучение <strong>БЕСПЛАТНО</strong></div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Блок преимуществ -->
+        <div class="hero-features row w-100 mt-4">
+    <div class="col-6 col-sm-6 col-md-3">
+        <div class="feature-item d-flex flex-column">
+            <strong>ГАРАНТИЯ 1 ГОД</strong>
+            <span>на весь ассортимент</span>
+        </div>
     </div>
+    <div class="col-6 col-sm-6 col-md-3">
+        <div class="feature-item d-flex flex-column">
+            <strong>РАССРОЧКА</strong>
+            <span>от 6 месяцев</span>
+        </div>
+    </div>
+    <div class="col-6 col-sm-6 col-md-3">
+        <div class="feature-item d-flex flex-column">
+            <strong>ПОДАРКИ</strong>
+            <span>и бонусы к покупкам</span>
+        </div>
+    </div>
+    <div class="col-6 col-sm-6 col-md-3">
+        <div class="yandex-reviews d-flex align-items-center gap-3">
+            <span class="yandex-logo d-flex align-items-center justify-content-center">Я</span>
+            <div class="reviews-text">
+                <small><b>Яндекс отзывы</b></small>
+                <strong>⭐ 4,9</strong>
+            </div>
+        </div>
+    </div>
+</div>
 </section>
 
         <!-- Catalog Section with Bootstrap Grid -->
         <section id="catalog" class="catalog-section">
             <div class="container">
                 <div class="row g-3">
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="card product-card">
-                            <div class="card-top d-flex justify-content-between align-items-start">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="card product-card d-flex flex-column">
+                            <div class="card-top d-flex justify-content-between align-items-center">
                                 <span class="badge badge-hit">ХИТ</span>
                                 <button class="btn btn-compare" title="Сравнить" data-bs-toggle="tooltip">⚖️</button>
                             </div>
@@ -150,18 +171,18 @@
                                 <img src="img/card.jpg" alt="Kugoo Kirin M4" class="card-img">
                             </div>
                             <div class="card-body p-0">
-                                <h1 class="card-title">Kugoo Kirin M4</h1>
+                                <h3 class="card-title">Kugoo Kirin M4</h3>  <!-- исправлен h1 на h3 для семантики -->
                                 <div class="card-specs">
                                     <div class="spec-item">🔋 2000 mAh</div>
                                     <div class="spec-item">⚡ 1,2 л.с.</div>
                                     <div class="spec-item">💨 60 км/ч</div>
                                     <div class="spec-item">⏱️ 5 часов</div>
                                 </div>
-                                <div class="card-price-block align-items-end">
+                                <div class="card-price-block d-flex flex-wrap align-items-center mt-auto mb-3">
                                     <div class="price-old">39 900 ₽</div>
                                     <div class="price-current">29 900 ₽</div>
-                                    <div class="card-actions ms-auto gap-2">
-                                        <button class="btn btn-sm btn-outline-secondary" title="Добавить в корзину" data-bs-toggle="tooltip" >🛒</button>
+                                    <div class="card-actions ms-auto d-flex gap-2">
+                                        <button class="btn btn-sm btn-outline-secondary" title="Добавить в корзину" data-bs-toggle="tooltip">🛒</button>
                                         <button class="btn btn-sm btn-fav" title="Добавить в избранное" data-bs-toggle="tooltip">♡</button>
                                     </div>
                                 </div>
@@ -169,10 +190,9 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="card product-card">
-                            <div class="card-top d-flex justify-content-between align-items-start">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="card product-card d-flex flex-column">
+                            <div class="card-top d-flex justify-content-between align-items-center">
                                 <span class="badge badge-hit">ХИТ</span>
                                 <button class="btn btn-compare" title="Сравнить" data-bs-toggle="tooltip">⚖️</button>
                             </div>
@@ -180,17 +200,17 @@
                                 <img src="img/card.jpg" alt="Kugoo Kirin M4" class="card-img">
                             </div>
                             <div class="card-body p-0">
-                                <h1 class="card-title">Kugoo Kirin M4</h1>
+                                <h3 class="card-title">Kugoo Kirin M4</h3>  <!-- исправлен h1 на h3 для семантики -->
                                 <div class="card-specs">
                                     <div class="spec-item">🔋 2000 mAh</div>
                                     <div class="spec-item">⚡ 1,2 л.с.</div>
                                     <div class="spec-item">💨 60 км/ч</div>
                                     <div class="spec-item">⏱️ 5 часов</div>
                                 </div>
-                                <div class="card-price-block align-items-end">
+                                <div class="card-price-block d-flex flex-wrap align-items-center mt-auto mb-3">
                                     <div class="price-old">39 900 ₽</div>
                                     <div class="price-current">29 900 ₽</div>
-                                    <div class="card-actions ms-auto gap-2">
+                                    <div class="card-actions ms-auto d-flex gap-2">
                                         <button class="btn btn-sm btn-outline-secondary" title="Добавить в корзину" data-bs-toggle="tooltip">🛒</button>
                                         <button class="btn btn-sm btn-fav" title="Добавить в избранное" data-bs-toggle="tooltip">♡</button>
                                     </div>
@@ -200,27 +220,56 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="card product-card">
-                            <div class="card-top d-flex justify-content-between align-items-start">
+                         <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="card product-card d-flex flex-column">
+                            <div class="card-top d-flex justify-content-between align-items-center">
                                 <span class="badge badge-hit">ХИТ</span>
-                                <button class="btn btn-compare" title="Сравнить" data-bs-toggle="tooltip2">⚖️</button>
+                                <button class="btn btn-compare" title="Сравнить" data-bs-toggle="tooltip">⚖️</button>
                             </div>
                             <div class="card-img-wrap text-center">
                                 <img src="img/card.jpg" alt="Kugoo Kirin M4" class="card-img">
                             </div>
                             <div class="card-body p-0">
-                                <h1 class="card-title">Kugoo Kirin M4</h1>
+                                <h3 class="card-title">Kugoo Kirin M4</h3>  <!-- исправлен h1 на h3 для семантики -->
                                 <div class="card-specs">
                                     <div class="spec-item">🔋 2000 mAh</div>
                                     <div class="spec-item">⚡ 1,2 л.с.</div>
                                     <div class="spec-item">💨 60 км/ч</div>
                                     <div class="spec-item">⏱️ 5 часов</div>
                                 </div>
-                                <div class="card-price-block align-items-end">
+                                <div class="card-price-block d-flex flex-wrap align-items-center mt-auto mb-3">
                                     <div class="price-old">39 900 ₽</div>
                                     <div class="price-current">29 900 ₽</div>
-                                    <div class="card-actions ms-auto gap-2">
+                                    <div class="card-actions ms-auto d-flex gap-2">
+                                        <button class="btn btn-sm btn-outline-secondary" title="Добавить в корзину" data-bs-toggle="tooltip">🛒</button>
+                                        <button class="btn btn-sm btn-fav" title="Добавить в избранное" data-bs-toggle="tooltip">♡</button>
+                                    </div>
+                                </div>
+                                <button class="btn btn-buy-click w-100 mt-3" data-bs-toggle="modal" data-bs-target="#buyModal">Купить в 1 клик</button>
+                            </div>
+                        </div>
+                    </div>
+                         <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="card product-card d-flex flex-column">
+                            <div class="card-top d-flex justify-content-between align-items-center">
+                                <span class="badge badge-hit">ХИТ</span>
+                                <button class="btn btn-compare" title="Сравнить" data-bs-toggle="tooltip">⚖️</button>
+                            </div>
+                            <div class="card-img-wrap text-center">
+                                <img src="img/card.jpg" alt="Kugoo Kirin M4" class="card-img">
+                            </div>
+                            <div class="card-body p-0">
+                                <h3 class="card-title">Kugoo Kirin M4</h3>  <!-- исправлен h1 на h3 для семантики -->
+                                <div class="card-specs">
+                                    <div class="spec-item">🔋 2000 mAh</div>
+                                    <div class="spec-item">⚡ 1,2 л.с.</div>
+                                    <div class="spec-item">💨 60 км/ч</div>
+                                    <div class="spec-item">⏱️ 5 часов</div>
+                                </div>
+                                <div class="card-price-block d-flex flex-wrap align-items-center mt-auto mb-3">
+                                    <div class="price-old">39 900 ₽</div>
+                                    <div class="price-current">29 900 ₽</div>
+                                    <div class="card-actions ms-auto d-flex gap-2">
                                         <button class="btn btn-sm btn-outline-secondary" title="Добавить в корзину" data-bs-toggle="tooltip">🛒</button>
                                         <button class="btn btn-sm btn-fav" title="Добавить в избранное" data-bs-toggle="tooltip">♡</button>
                                     </div>
@@ -230,40 +279,10 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="card product-card">
-                            <div class="card-top d-flex justify-content-between align-items-start">
-                                <span class="badge badge-hit">ХИТ</span>
-                                <button class="btn btn-compare" title="Сравнить" data-bs-toggle="tooltip">⚖️</button>
-                            </div>
-                            <div class="card-img-wrap text-center">
-                                <img src="img/card.jpg" alt="Kugoo Kirin M4" class="card-img">
-                            </div>
-                            <div class="card-body p-0">
-                                <h1 class="card-title">Kugoo Kirin M4</h1>
-                                <div class="card-specs">
-                                    <div class="spec-item">🔋 2000 mAh</div>
-                                    <div class="spec-item">⚡ 1,2 л.с.</div>
-                                    <div class="spec-item">💨 60 км/ч</div>
-                                    <div class="spec-item">⏱️ 5 часов</div>
-                                </div>
-                                <div class="card-price-block align-items-end">
-                                    <div class="price-old">39 900 ₽</div>
-                                    <div class="price-current">29 900 ₽</div>
-                                    <div class="card-actions ms-auto gap-2">
-                                        <button class="btn btn-sm btn-outline-secondary" title="Добавить в корзину" data-bs-toggle="tooltip">🛒</button>
-                                        <button class="btn btn-sm btn-fav" title="Добавить в избранное" data-bs-toggle="tooltip">♡</button>
-                                    </div>
-                                </div>
-                                <button class="btn btn-buy-click w-100 mt-3" data-bs-toggle="modal" data-bs-target="#buyModal">Купить в 1 клик</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="progress mt-2" style="height: 6px;">
-    <div class="progress-bar bg-purple" style="width: 40%;" role="progressbar"></div>
-</div>
-<small class="text-muted">Осталось 4 шт.</small>
+        <div class="progress-bar bg-purple" role="progressbar"></div>
+
+    <small class="text-muted">Осталось 4 шт.</small>
+
                 <div class="row mt-5">
                     <div class="col-12 text-center">
                         <button class="btn btn-outline-main">Смотреть все</button>
@@ -323,12 +342,13 @@
         <section class="categories-section" id="act">
             <div class="container">
                 <div class="row align-items-center mb-4">
-                    <div class="col-12 col-md-9">
+                    <div class="col-12 col-md-7">
                         <h2>ПОПУЛЯРНЫЕ КАТЕГОРИИ</h2>
                     </div>
-                    <div class="col-12 col-md-3">
+                    <div class="col-12 col-md-5">
                         <div class="card manager-widget">
-                            <div class="card-body d-flex align-items-start gap-3">
+                            <div class="card-body d-flex align-items-center gap-3">
+                                
                                 <img src="img/manager.png" alt="Менеджер" class="manager-avatar">
                                 <div>
                                     <p class="mb-2 small">Менеджер ответит на любой ваш вопрос о продуктах Kugoo</p>
@@ -340,7 +360,7 @@
                 </div>
 
                 <div class="row g-3">
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
                         <div class="card category-card" style="background-image: url('img/1cat.jpg');">
                             <div class="category-content">
                                 <h3 class="text-white">Роботы-пылесосы</h3>
@@ -348,7 +368,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
                         <div class="card category-card" style="background-image: url('img/2cat.jpg');">
                             <div class="category-content">
                                 <h3 class="text-white">Весы</h3>
@@ -356,7 +376,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
                         <div class="card category-card" style="background-image: url('img/3cat.jpg');">
                             <div class="category-content">
                                 <h3 class="text-white">Электросамокаты</h3>
@@ -364,7 +384,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
                         <div class="card category-card" style="background-image: url('img/1cat.jpg');">
                             <div class="category-content">
                                 <h3 class="text-white">Роботы-пылесосы</h3>
@@ -625,7 +645,7 @@
                 <h2 class="mb-4">НОВЫЕ СТАТЬИ В БЛОГЕ</h2>
 
                 <div class="row g-3">
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
                         <div class="card blog-card h-100">
                             <img src="img/state.jpg" alt="Статья" class="card-img-top" style="height: 200px; object-fit: cover;">
                             <div class="card-body">
@@ -638,7 +658,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
                         <div class="card blog-card h-100">
                             <img src="img/state.jpg" alt="Статья" class="card-img-top" style="height: 200px; object-fit: cover;">
                             <div class="card-body">
@@ -651,7 +671,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
                         <div class="card blog-card h-100">
                             <img src="img/state.jpg" alt="Статья" class="card-img-top" style="height: 200px; object-fit: cover;">
                             <div class="card-body">
@@ -664,7 +684,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
                         <div class="card blog-card h-100">
                             <img src="img/state.jpg" alt="Статья" class="card-img-top" style="height: 200px; object-fit: cover;">
                             <div class="card-body">

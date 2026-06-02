@@ -211,7 +211,10 @@
     .about-dealer .dealer-image img { max-height: 260px !important; }
     .navbar-brand { font-size: 20px !important; }
 }
-
+.progress-bar{
+    width: 40%; 
+    height: 6px;
+}
 /* Minor utility: make banner headings closer to left edge */
 .banner-card { padding-left: 18px; padding-right: 18px; }
 
